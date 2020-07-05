@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html{
+            height: 100vh;
+        }
+
+        .container {
+            padding: 10%;
+        }
+
+        .slide-container {
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+        }
+
+        .slide-container .slide-content {
+            max-width: 500px;
+            max-height: 500px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            overflow: hidden;
+        }
+
+        .slide-container .slide-content .slide-img {
+            max-width: 100%;
+        }
+
+        .slide-container .slide-hook {
+            background: rgba(0, 0, 0, 0.4);
+            padding-left: 30px;
+            position: relative;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <div class="slide-container">
+            <span class="slide-hook slide-left-hook"></span>
+            <section class="slide-content">
+                <img class="slide-img" src="koala.jpg" alt="">
+                <img class="slide-img" src="desert.jpg" alt="">
+                <img class="slide-img" src="koala.jpg" alt="">
+                <img class="slide-img" src="desert.jpg" alt="">
+            </section>
+            <span class="slide-hook slide-right-hook"></span>
+        </div>
+    </main>
+
+    <script src="../../Js/jquery.js"></script>
+    <script src="../../Plugin/carousel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
